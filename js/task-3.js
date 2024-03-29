@@ -4,12 +4,12 @@ function checkForSpam(message) {
     const normalizedString = message.toLowerCase();
     const hasSpamWord1 = normalizedString.includes(blacklisted1);
     const hasSpamWord2 = normalizedString.includes(blacklisted2);
-    console.log(hasSpamWord1 || hasSpamWord2);
+    return hasSpamWord1 || hasSpamWord2;
 }
-checkForSpam("Latest technology news");
-checkForSpam("JavaScript weekly newsletter");
-checkForSpam("Get best sale offers now!");
-checkForSpam("Amazing SalE, only tonight!");
-checkForSpam("Trust me, this is not a spam message");
-checkForSpam("Get rid of sPaM emails. Our book in on sale!");
-checkForSpam("[SPAM] How to earn fast money?");
+console.log(checkForSpam("Latest technology news"));
+console.log(checkForSpam("JavaScript weekly newsletter"));
+console.log(checkForSpam("Get best sale offers now!"));
+console.log(checkForSpam("Amazing SalE, only tonight!"));
+console.log(checkForSpam("Trust me, this is not a spam message"));
+console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
+console.log(checkForSpam("[SPAM] How to earn fast money?"));
